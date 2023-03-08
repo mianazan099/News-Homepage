@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  --clr-orange: hsl(35, 77%, 62%);
+  --clr-red: hsl(5, 85%, 63%);
+  --clr-white: hsl(36, 100%, 99%);
+  --clr-blue-200: hsl(233, 8%, 79%);
+  --clr-blue-500: hsl(236, 13%, 42%);
+  --clr-blue-900: hsl(240, 100%, 5%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+header {
+    padding: 2rem 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo > img {
+    width: 48px;
+}
+
+.menu-icon {
+    z-index: 100;
+    background: none;
+    border: none;
+}
+
+.nav-menu {
+    position: absolute;
+    background-color: white;
+    inset: 0 0 0 30%;
+    padding: 40% 0 0 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    box-shadow: 0 0 0 20rem rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+.nav-menu.show {
+    display: flex;
+}
+
+.nav-link {
+    font-size: 18px;
+    list-style: none;
+}
+
+@media (min-width: 480px) {
+  .logo > img {
+    width: 4rem;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .nav-menu {
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    flex-direction: row;
+    gap: 2.5rem;
+    box-shadow: none;
+    display: flex;
+  }
+}
