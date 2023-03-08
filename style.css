@@ -99,7 +99,7 @@ header {
     list-style: none;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 600px) {
   .logo > img {
     width: 4rem;
   }
@@ -114,5 +114,91 @@ header {
     gap: 2.5rem;
     box-shadow: none;
     display: flex;
+  }
+}
+
+main {
+  padding: 0 1rem 2rem;
+}
+
+.content {
+  margin-bottom: 4rem;
+}
+
+.main-img {
+  margin-bottom: 1.5rem;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.main-content p {
+  color: var(--clr-blue-500);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.main-content button {
+  background-color: var(--clr-red);
+  color: white;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 0;
+  letter-spacing: 4px;
+}
+
+.new {
+  background-color: var(--clr-blue-900);
+  color: white;
+  padding: 1.25rem 1.35rem;
+}
+
+.new h2 {
+  font-size: 2rem;
+  color: var(--clr-orange);
+  margin-bottom: 1.5rem;
+}
+
+.new > div {
+  border-bottom: 1px solid var(--clr-blue-500);
+  margin-bottom: 1.5rem;
+}
+
+.new > div:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+
+.new > div h3 {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+.new > div p {
+  color: var(--clr-blue-200);
+  margin-bottom: 2rem;
+}
+
+.new > div:last-of-type p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .content {
+    grid-column: span 2 / auto;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
