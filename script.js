@@ -1,17 +1,16 @@
 const menuBtn = document.querySelector(".menu-icon");
 const menuIcon = document.querySelector(".menu-icon > img");
-const navMenu = document.querySelector(".nav-menu");
+const body = document.querySelector("body");
 
 menuBtn.addEventListener("click", () => {
     if (menuIcon.attributes.src.nodeValue === "./images/icon-menu.svg")
     {
-        navMenu.classList.add("show")
+        body.classList.add("show-nav")
         menuIcon.src = "./images/icon-menu-close.svg"
     }
     else
     {
-        navMenu.classList.remove("show")
+        body.classList.remove("show-nav")
         menuIcon.src = "./images/icon-menu.svg"
     }
 })
-console.log(menuBtn);
