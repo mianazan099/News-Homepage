@@ -246,32 +246,48 @@ main {
 }
 
 section {
-  /* padding: 1rem 1.25rem 5rem 1rem; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: 2rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
 .card {
-  /* display: flex; */
-  /* gap: 1rem; */
+  display: flex;
+  gap: 1.25rem;
 }
 
 .card img {
-  /* width: 100px; */
+  width: 100px;
 }
 
 .card-num {
-  /* font-size: 2rem; */
-  /* font-weight: 700; */
-  /* color: var(--clr-blue-200); */
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--clr-blue-200);
 }
 
 .card-head {
-  /* font-weight: 800; */
-  /* font-size: 1.25rem; */
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.card-head:hover {
+  color: var(--clr-red);
+  cursor: pointer;
 }
 
 .card-desc {
-  /* color: var(--clr-blue-500); */
+  color: var(--clr-blue-500);
+}
+@media (min-width: 52.5rem) {
+  section {
+    flex-direction: row;
+  }
+  .card {
+    flex: 1;
+  }
+  .card img {
+    width: 100px;
+    height: auto;
+  }
 }
